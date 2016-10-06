@@ -1,0 +1,170 @@
+  @font-face {
+    font-family: SofiaProBold;
+    src: url(fonts/SofiaProBold.otf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'SofiaProBold', Arial, sans-serif;
+	width: 100%;
+}
+
+/*#topbar, #bottombar, .bodytext{
+	background-color: pink;
+}*/
+
+
+#topbar{
+	width: 100%;
+	height: 60px;
+	top: 0;
+	position: fixed;
+	z-index: 2;
+}
+
+#bottombar{
+	width: 100%;
+	height: 60px;
+	bottom: 0;
+	position: fixed;
+	z-index: 2;
+}
+
+
+.hamburger, .profilelink, .number, .downarrow {
+ z-index: 2;
+}
+
+.hamburger, .number{
+	float: left;
+	margin-left: 50px;
+}
+
+.profilelink, .downarrow{
+	float: right;
+	margin-right: 70px;
+}
+
+.hamburger, .profilelink{
+	margin-top: 40px;
+}
+
+.number, .downarrow{
+	margin-bottom: 40px;
+}
+
+/* Hamburger */
+#hamburgericon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburgericon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #000000;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#hamburgericon span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburgericon span:nth-child(2),#hamburgericon span:nth-child(3) {
+  top: 10px;
+}
+
+#hamburgericon span:nth-child(4) {
+  top: 20px;
+}
+
+#hamburgericon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburgericon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburgericon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburgericon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+
+/*end Hamburger */
+
+
+/*Profile Link*/
+
+.profilelink span{
+	font-size: 18px;
+}
+
+/*end Profile Link*/
+
+
+/*Number*/
+
+.number span{
+	font-size: 18px;
+}
+
+/*end Number*/
+
+
+.bodytext{
+	font-family: 'SofiaProBold', Arial, sans-serif;
+	width: 50%;
+	font-size: 6.5vw; /*6em*/
+	margin-left: 40%;
+	margin-right: auto;
+	line-height: 1;
+	text-align: center;
+	z-index: 1;
+}
+.alignleft{
+	text-align: left;
+}
+
+.red{
+	color: red;
+}

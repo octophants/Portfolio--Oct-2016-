@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio October 2016</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="scripts/style.css" />
+  <link rel="stylesheet" type="text/css" href="scripts/jquery.fullPage.css" />
+  <script type="text/javascript" src="scripts/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="scripts/code.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function() {
+	$('#fullpage').fullpage({
+	});
+
+	$('#hamburgericon').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+</script>
+</head>
+
+<body>
+
+<!-- top and bottom UI -->
+
+<div id="topbar">
+	<div class="hamburger">
+		<div id="hamburgericon">
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  	</div>
+	</div>
+	<div class="profilelink"><span>profile</span></div>
+</div>
+
+<div id="bottombar">
+	<div class="number"><span>;)</span></div>
+	<div class="downarrow"><img src="images/downarrow.svg"></div>
+</div>
+
+<div id="fullpage"> <!-- begin fullpage -->
+
+<div id="opening" class="section"> <!-- opening -->
+<div class="bodytext alignleft">
+I'm a Brooklyn based designer with <span id="slotmachine">intense</span> <br>ideas.
+</div>
+</div>
+
+<div id="one" class="section"> <!-- project 1 -->
+<div class="bodytext">
+Google Play
+</div>
+</div>
+
+<div id="two" class="section"> <!-- project 2 -->
+<div class="bodytext">
+Type/Code
+</div>
+</div>
+
+<div id="three" class="section"> <!-- project 3 -->
+<div class="bodytext">
+Portfolio
+</div>
+</div>
+
+<div id="four" class="section"> <!-- project 4 -->
+<div class="bodytext">
+Portal
+</div>
+</div>
+
+</div> <!-- end fullpage -->
+
+</body>
+
+
+</html>

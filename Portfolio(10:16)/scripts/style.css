@@ -11,8 +11,16 @@
 body{
 	font-family: 'SofiaProBold', Arial, sans-serif;
 	width: 100%;
+  height: 10000px;
+  /*default styling*/
+  background-color: red;
+  color: purple;
 }
 
+
+.section{
+  background-color: transparent;
+}
 /*#topbar, #bottombar, .bodytext{
 	background-color: pink;
 }*/
@@ -150,6 +158,32 @@ body{
 
 /*end Number*/
 
+/*down Arrow*/
+
+.downarrow{
+      -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.rotatearrow{
+    -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+    -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/*end down Arrow*/
+
 
 .bodytext{
 	font-family: 'SofiaProBold', Arial, sans-serif;
@@ -165,6 +199,46 @@ body{
 	text-align: left;
 }
 
-.red{
-	color: red;
+/*stying sections*/
+
+.opening, .one, .two, .three, .four, .five{
+    -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
+
+.opening{
+  background-color: red;
+  color: purple;
+}
+
+.one{
+  background-color: orange;
+  color: blue;
+}
+
+.two{
+  background-color: yellow;
+  color: green;
+}
+
+.three{
+  background-color: green;
+  color: yellow;
+}
+
+.four{
+  background-color: blue;
+  color: orange;
+}
+
+.five{
+  background-color: purple;
+  color: red;
+}
+
+
+
+
+/*end styling sections*/

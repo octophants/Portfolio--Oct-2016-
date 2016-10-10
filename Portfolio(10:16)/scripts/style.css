@@ -18,6 +18,50 @@ body{
 }
 
 
+/*styling scrollbar and selection*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff00bb;
+}
+
+
+::-moz-selection { 
+  background: rgba(255,255,255,0.99);
+  color: #000000;
+   }
+::selection { 
+  background: rgba(255,255,255,0.99);
+  color: #000000;
+   }
+
+
+
+/*tools*/
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.noopacity{
+  opacity: 0;
+}
+
+.fullopacity{
+  opacity: 1;
+}
+
 .section{
   background-color: transparent;
 }
@@ -56,15 +100,15 @@ body{
 
 .profilelink, .downarrow{
 	float: right;
-	margin-right: 70px;
+	margin-right: 50px;
 }
 
 .hamburger, .profilelink{
-
+ cursor: crosshair;
 }
 
 .number, .downarrow{
-
+ cursor: not-allowed;
 }
 
 /* Hamburger */
@@ -76,11 +120,18 @@ body{
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: crosshair;
+}
+
+#hamburgericon:hover{
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
 }
 
 #hamburgericon span {
@@ -144,8 +195,94 @@ body{
 
 /*Profile Link*/
 
+.profilelink{
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.profilelink:hover{
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
 .profilelink span{
-	font-size: 18px;
+	font-size: 2em;
+  /*background-color: transparent;
+  background: linear-gradient(to right, black 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  padding: 5px;*/
+  transition: all 0.2s ease;
+}
+
+
+.profilelink span:hover{
+  /*background-position: left bottom;*/
+}
+
+/*X which appears on click*/
+
+#xicon{
+  display: none;
+  cursor: crosshair;
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+#xicon:hover{
+    -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+}
+
+
+#xicon span{
+  margin-top: 10px;
+  height: 5px;
+  width: 30px;
+  opacity: 1;
+  right: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+
+#xicon span:nth-child(1) {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#xicon span:nth-child(2) {
+  position: absolute;
+    -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /*end Profile Link*/
@@ -170,6 +307,7 @@ body{
 /*down Arrow*/
 
 .downarrow{
+  padding-right: 10px; 
   font-size: 2.5em;
       -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -208,6 +346,43 @@ body{
 .alignleft{
 	text-align: left;
 }
+
+
+/*navigation*/
+
+#navigation{
+position: fixed;
+background-color: white;
+width: 100vw;
+height: 100vh;
+display: none;
+z-index: 2;
+}
+
+.hideotherUI{
+  display: none;
+}
+
+.shownav{
+  display: block;
+}
+
+/*end navigation*/
+
+/*navigation*/
+
+#profile{
+position: fixed;
+background-color: black;
+width: 100vw;
+height: 100vh;
+display: none;
+z-index: 2;
+}
+
+/*end navigation*/
+
+
 
 /*stying sections*/
 

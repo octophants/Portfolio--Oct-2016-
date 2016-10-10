@@ -22,6 +22,7 @@ var texts = [
 "nostalgic", 
 "exciting"
 ];
+
 var count = 0;
 function changeText() {
     $("#slotmachine").text(texts[count]);
@@ -30,6 +31,7 @@ function changeText() {
 setInterval(changeText, 400);
 
 //end changing words
+
 
 
 // scrolling color transitions
@@ -70,12 +72,14 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > openingsection) {
         $("body").addClass("one");
         $("#hamburgericon span").addClass("UIcolor1");
+        $("#xicon span").addClass("UIcolor1");
         $(".firstnumber").addClass("shownumber");
         $(".openingnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("one");
        $("body").addClass("opening");
        $("#hamburgericon span").removeClass("UIcolor1");
+       $("#xicon span").removeClass("UIcolor1");
        $(".firstnumber").removeClass("shownumber");
        $(".openingnumber").addClass("shownumber");
     }
@@ -85,11 +89,13 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > firstsection) {
         $("body").addClass("two");
         $("#hamburgericon span").addClass("UIcolor2");
+        $("#xicon span").addClass("UIcolor2");
         $(".secondnumber").addClass("shownumber");
         $(".firstnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("two");
        $("#hamburgericon span").removeClass("UIcolor2");
+       $("#xicon span").removeClass("UIcolor2");
        $(".secondnumber").removeClass("shownumber");
     }
 
@@ -98,11 +104,13 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > secondsection) {
         $("body").addClass("three");
         $("#hamburgericon span").addClass("UIcolor3");
+        $("#xicon span").addClass("UIcolor3");
         $(".thirdnumber").addClass("shownumber");
         $(".secondnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("three");
        $("#hamburgericon span").removeClass("UIcolor3");
+       $("#xicon span").removeClass("UIcolor3");
        $(".thirdnumber").removeClass("shownumber");
     }
 
@@ -111,11 +119,13 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > thirdsection) {
         $("body").addClass("four");
         $("#hamburgericon span").addClass("UIcolor4");
+        $("#xicon span").addClass("UIcolor4");
         $(".fourthnumber").addClass("shownumber");
         $(".thirdnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("four");
        $("#hamburgericon span").removeClass("UIcolor4");
+       $("#xicon span").removeClass("UIcolor4");
        $(".fourthnumber").removeClass("shownumber");
     }
 
@@ -124,6 +134,7 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > fourthsection) {
         $("body").addClass("five");
         $("#hamburgericon span").addClass("UIcolor5");
+        $("#xicon span").addClass("UIcolor5");
         $(".fifthnumber").addClass("shownumber");
         $(".fourthnumber").removeClass("shownumber");
         // spin arrow
@@ -131,11 +142,45 @@ $(window).on("scroll", function() {
     } else {
        $("body").removeClass("five");
        $("#hamburgericon span").removeClass("UIcolor5");
+       $("#xicon span").removeClass("UIcolor5");
        $(".fifthnumber").removeClass("shownumber");
        // unspin arrow
        $(".downarrow").removeClass("rotatearrow");
     }
 
 });
+
+
+// hamburger menu + profile blurb
+
+$(document).ready(function(){
+    $("#hamburgericon").click(function(){
+        $("#navigation").toggle("show");
+        $(".profilelink").toggle("hideotherUI");
+        $(".number").toggle("hideotherUI");
+        $(".downarrow").toggle("hideotherUI");
+    });
+
+    $(".profilelink").click(function(){
+        $(".profilelink").toggle("noopacity");
+        $("#profile").toggle("show");
+        $("#xicon").toggle("show");
+        $(".hamburger").toggle("hideotherUI");
+        $(".number").toggle("hideotherUI");
+        $(".downarrow").toggle("hideotherUI");
+    });
+
+    $("#xicon").click(function(){
+        $(".profilelink").toggle("noopacity");
+        $("#profile").toggle("show");
+        $("#xicon").toggle("show");
+        $(".hamburger").toggle("hideotherUI");
+        $(".number").toggle("hideotherUI");
+        $(".downarrow").toggle("hideotherUI");
+    });
+
+});
+
+// end hamburger menu + profile blurb
 
 

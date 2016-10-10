@@ -30,6 +30,7 @@ body{
 	width: 100%;
 	height: 60px;
 	top: 0;
+  margin-top: 30px;
 	position: fixed;
 	z-index: 2;
 }
@@ -38,6 +39,7 @@ body{
 	width: 100%;
 	height: 60px;
 	bottom: 0;
+  margin-bottom: 10px;
 	position: fixed;
 	z-index: 2;
 }
@@ -58,11 +60,11 @@ body{
 }
 
 .hamburger, .profilelink{
-	margin-top: 40px;
+
 }
 
 .number, .downarrow{
-	margin-bottom: 40px;
+
 }
 
 /* Hamburger */
@@ -86,7 +88,6 @@ body{
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #000000;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -153,7 +154,15 @@ body{
 /*Number*/
 
 .number span{
-	font-size: 18px;
+	font-size: 2em;
+}
+
+.openingnumber, .firstnumber, .secondnumber, .thirdnumber, .fourthnumber, .fifthnumber{
+  display: none;
+}
+
+.shownumber{
+  display: block;
 }
 
 /*end Number*/
@@ -161,6 +170,7 @@ body{
 /*down Arrow*/
 
 .downarrow{
+  font-size: 2.5em;
       -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -238,7 +248,35 @@ body{
   color: red;
 }
 
+.UIcoloropening, .UIcolor1, .UIcolor2, .UIcolor3, .UIcolor4, .UIcolor5{
+    -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
 
+.UIcoloropening{
+  background-color: purple;
+}
 
+.UIcolor1{
+  background-color: blue;
+}
+
+.UIcolor2{
+  background-color: green;
+}
+
+.UIcolor3{
+  background-color: yellow;
+}
+
+.UIcolor4{
+  background-color: orange;
+}
+
+.UIcolor5{
+  background-color: red;
+}
 
 /*end styling sections*/

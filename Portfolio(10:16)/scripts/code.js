@@ -65,52 +65,73 @@ $(window).resize(function(){
 
 $(window).on("scroll", function() {
 
-	//transitons for first section
+	//transitions for first section
 
     if($(window).scrollTop() > openingsection) {
         $("body").addClass("one");
-        $("body").removeClass("opening");
+        $("#hamburgericon span").addClass("UIcolor1");
+        $(".firstnumber").addClass("shownumber");
+        $(".openingnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("one");
        $("body").addClass("opening");
+       $("#hamburgericon span").removeClass("UIcolor1");
+       $(".firstnumber").removeClass("shownumber");
+       $(".openingnumber").addClass("shownumber");
     }
 
-    //transitons for second section
+    //transitions for second section
 
     if($(window).scrollTop() > firstsection) {
         $("body").addClass("two");
-        $("body").removeClass("one");
+        $("#hamburgericon span").addClass("UIcolor2");
+        $(".secondnumber").addClass("shownumber");
+        $(".firstnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("two");
+       $("#hamburgericon span").removeClass("UIcolor2");
+       $(".secondnumber").removeClass("shownumber");
     }
 
-    //transitons for third section
+    //transitions for third section
 
     if($(window).scrollTop() > secondsection) {
         $("body").addClass("three");
-        $("body").removeClass("two");
+        $("#hamburgericon span").addClass("UIcolor3");
+        $(".thirdnumber").addClass("shownumber");
+        $(".secondnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("three");
+       $("#hamburgericon span").removeClass("UIcolor3");
+       $(".thirdnumber").removeClass("shownumber");
     }
 
-    //transitons for fourth section
+    //transitions for fourth section
 
     if($(window).scrollTop() > thirdsection) {
         $("body").addClass("four");
-        $("body").removeClass("three");
+        $("#hamburgericon span").addClass("UIcolor4");
+        $(".fourthnumber").addClass("shownumber");
+        $(".thirdnumber").removeClass("shownumber");
     } else {
        $("body").removeClass("four");
+       $("#hamburgericon span").removeClass("UIcolor4");
+       $(".fourthnumber").removeClass("shownumber");
     }
 
-    //transitons for fifth section
+    //transitions for fifth section
 
     if($(window).scrollTop() > fourthsection) {
         $("body").addClass("five");
-        $("body").removeClass("four");
+        $("#hamburgericon span").addClass("UIcolor5");
+        $(".fifthnumber").addClass("shownumber");
+        $(".fourthnumber").removeClass("shownumber");
         // spin arrow
         $(".downarrow").addClass("rotatearrow");
     } else {
        $("body").removeClass("five");
+       $("#hamburgericon span").removeClass("UIcolor5");
+       $(".fifthnumber").removeClass("shownumber");
        // unspin arrow
        $(".downarrow").removeClass("rotatearrow");
     }

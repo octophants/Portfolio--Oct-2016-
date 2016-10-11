@@ -15,6 +15,10 @@ body{
   /*default styling*/
   background-color: red;
   color: purple;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 
@@ -112,7 +116,7 @@ body{
 }
 
 /* Hamburger */
-#hamburgericon {
+#hamburgericon, #xicon {
   width: 30px;
   height: 30px;
   position: relative;
@@ -134,8 +138,7 @@ body{
   transform: rotate(-25deg);
 }
 
-#hamburgericon span {
-  display: block;
+#hamburgericon span, #xicon span {
   position: absolute;
   height: 5px;
   width: 100%;
@@ -145,22 +148,26 @@ body{
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 #hamburgericon span:nth-child(1) {
   top: 0px;
 }
 
-#hamburgericon span:nth-child(2),#hamburgericon span:nth-child(3) {
+#hamburgericon span:nth-child(2), #hamburgericon span:nth-child(3) {
   top: 10px;
 }
 
 #hamburgericon span:nth-child(4) {
   top: 20px;
+}
+
+#hamburgericon.open{
+  margin-top: -10px;
 }
 
 #hamburgericon.open span:nth-child(1) {
@@ -169,14 +176,16 @@ body{
   left: 50%;
 }
 
-#hamburgericon.open span:nth-child(2) {
+#hamburgericon.open span:nth-child(2), #xicon span:nth-child(1) {
+  margin-top: 10px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#hamburgericon.open span:nth-child(3) {
+#hamburgericon.open span:nth-child(3), #xicon span:nth-child(2) {
+  margin-top: 10px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -195,7 +204,20 @@ body{
 
 /*Profile Link*/
 
+.profileUI, #xicon{
+  position: absolute;
+}
+
+.profileUI{
+  opacity: 1;
+}
+
+#xicon{
+  display: none;
+}
+
 .profilelink{
+  margin-right: 80px;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -214,7 +236,6 @@ body{
   background-size: 200% 100%;
   background-position:right bottom;
   padding: 5px;*/
-  transition: all 0.2s ease;
 }
 
 
@@ -224,66 +245,7 @@ body{
 
 /*X which appears on click*/
 
-#xicon{
-  display: none;
-  cursor: crosshair;
-  z-index: 5;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 0;
-  margin-right: 50px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
 
-#xicon:hover{
-    -webkit-transform: rotate(25deg);
-  -moz-transform: rotate(25deg);
-  -o-transform: rotate(25deg);
-  transform: rotate(25deg);
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-
-}
-
-
-#xicon span{
-  margin-top: 10px;
-  height: 5px;
-  width: 30px;
-  opacity: 1;
-  right: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-
-#xicon span:nth-child(1) {
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#xicon span:nth-child(2) {
-  position: absolute;
-    -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
 
 /*end Profile Link*/
 
@@ -313,21 +275,21 @@ body{
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .rotatearrow{
-    -webkit-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-    -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /*end down Arrow*/
@@ -355,17 +317,18 @@ position: fixed;
 background-color: white;
 width: 100vw;
 height: 100vh;
-display: none;
 z-index: 2;
+top: 0;
+display: none;
 }
+
+
 
 .hideotherUI{
   display: none;
 }
 
-.shownav{
-  display: block;
-}
+
 
 /*end navigation*/
 
@@ -387,10 +350,10 @@ z-index: 2;
 /*stying sections*/
 
 .opening, .one, .two, .three, .four, .five{
-    -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .opening{
@@ -423,13 +386,14 @@ z-index: 2;
   color: red;
 }
 
-.UIcoloropening, .UIcolor1, .UIcolor2, .UIcolor3, .UIcolor4, .UIcolor5{
-    -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+.UIcoloropening, .UIcolor1, .UIcolor2, .UIcolor3, .UIcolor4, .UIcolor5, .openingcolor, .firstcolor, .secondcolor, .thirdcolor, .fourthcolor, .fifthcolor{
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
+/*default*/
 .UIcoloropening{
   background-color: purple;
 }
@@ -454,4 +418,63 @@ z-index: 2;
   background-color: red;
 }
 
+/*default*/
+.UItext{
+  color: purple;
+}
+
+.firstcolor{
+  color: blue;
+}
+
+.secondcolor{
+  color: green;
+}
+
+.thirdcolor{
+  color: yellow;
+}
+
+.fourthcolor{
+  color: orange;
+}
+
+.fifthcolor{
+  color: red;
+}
 /*end styling sections*/
+
+
+/*responsiveness*/
+
+/*@media (max-width: 600px) and (min-width: 520px) { !!!!this is the syntax
+  body {
+    width: 640px;
+  }
+}*/
+
+@media (max-width: 600px) {
+
+  .bodytext {
+    width: 80vw;
+    margin-left: 10vw;
+    font-size: 12vh;
+  }
+    .alignleft{
+    font-size: 8vh;
+    text-align: center;
+  }
+}
+
+@media only screen (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait)  { 
+
+  .bodytext {
+    width: 80vw;
+    margin-left: 10vw;
+    font-size: 12vh;
+  }
+    .alignleft{
+    font-size: 8vh;
+  }
+
+}

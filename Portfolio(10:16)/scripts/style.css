@@ -11,6 +11,7 @@
 body{
 	font-family: 'SofiaProBold', Arial, sans-serif;
 	width: 100%;
+  height: 600vh;
   height: 10000px;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -306,13 +307,11 @@ body{
 
 .bodytext{
 	font-family: 'SofiaProBold', Arial, sans-serif;
-	font-size: 10vh; /*6em*/
-/*  width: 50%;
-	margin-left: 40%;
-	margin-right: auto;*/
+	font-size: 20vh; /*6em*/
 	line-height: 1;
 	text-align: center;
-	z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 .openingtext{
 /*  background-color: pink;*/
@@ -507,6 +506,43 @@ right: 0;
 }
 /*end styling sections*/
 
+
+/*styling images (hoo boy)*/
+
+
+.oldportfolio1, .oldportfolio2, .oldportfolio3{
+  position: absolute;
+ -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+/*  width: 100px;
+  margin-left: 50%;
+  margin-right: auto;
+  text-align: center;*/
+}
+
+.oldportfolio1{
+  width: 35vw;
+  margin-top: -16%;
+  margin-left: 12%;
+}
+
+.oldportfolio2{
+  width: 35vw;
+  margin-top: -8%;
+  margin-left: 58%;
+}
+
+.oldportfolio3{
+  width: 28vw;
+  margin-top: 2%;
+  margin-left: 38%;
+}
+
+/*end styling images*/
 
 /*responsiveness*/
 

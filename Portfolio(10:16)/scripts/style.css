@@ -46,8 +46,8 @@ body{
 
 .default{
   /*default styling*/
-  background-color: red;
-  color: purple;
+  background-color: #f1ddc1;
+  color: #000000;
 }
 
 /*tools*/
@@ -148,6 +148,9 @@ body{
   cursor: crosshair;
 }
 
+#xicon span{
+    background-color: #ffffff;
+}
 /*#hamburgericon:hover{
   -webkit-transform: rotate(-25deg);
   -moz-transform: rotate(-25deg);
@@ -307,7 +310,7 @@ body{
 
 .bodytext{
 	font-family: 'SofiaProBold', Arial, sans-serif;
-	font-size: 20vh; /*6em*/
+	font-size: 15vh; /*6em*/
 	line-height: 1;
 	text-align: center;
   position: relative;
@@ -315,7 +318,6 @@ body{
 }
 .openingtext{
 /*  background-color: pink;*/
-font-size: 10vh;
 width: 55%;
 margin-left: auto;
 margin-right: auto;
@@ -419,8 +421,8 @@ right: 0;
 }
 
 .opening{
-  background-color: red;
-  color: purple;
+  background-color: #f1ddc1;
+  color: #000000;
 }
 
 .one{
@@ -439,13 +441,13 @@ right: 0;
 }
 
 .four{
-  background-color: blue;
+  background-color: #81a9ee;
   color: orange;
 }
 
 .five{
-  background-color: purple;
-  color: red;
+  background-color: #212121;
+  color: #e11ede;
 }
 
 .UIcoloropening, .UIcolor1, .UIcolor2, .UIcolor3, .UIcolor4, .UIcolor5, .openingcolor, .firstcolor, .secondcolor, .thirdcolor, .fourthcolor, .fifthcolor{
@@ -457,7 +459,7 @@ right: 0;
 
 /*default*/
 .UIcoloropening{
-  background-color: purple;
+  background-color: #000000;
 }
 
 .UIcolor1{
@@ -477,12 +479,12 @@ right: 0;
 }
 
 .UIcolor5{
-  background-color: red;
+  background-color: #e11ede;
 }
 
 /*default*/
 .UItext{
-  color: purple;
+  color: #000000;
 }
 
 .firstcolor{
@@ -502,7 +504,7 @@ right: 0;
 }
 
 .fifthcolor{
-  color: red;
+  color: #e11ede;
 }
 /*end styling sections*/
 
@@ -510,7 +512,7 @@ right: 0;
 /*styling images (hoo boy)*/
 
 
-.oldportfolio1, .oldportfolio2, .oldportfolio3{
+.splash1, .splash2, .splash3, .portal1, .portal2, .portal3, .oldportfolio1, .oldportfolio2, .oldportfolio3{
   position: absolute;
  -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -524,21 +526,63 @@ right: 0;
   text-align: center;*/
 }
 
+.splash1{
+  opacity: 0.43;
+  width: 33vw;
+  margin-top: -32%;
+  margin-left: 14%;
+}
+
+.splash2{
+  opacity: 0.43;
+  width: 32vw;
+  margin-top: -30%;
+  margin-left: 52%;
+}
+
+.splash3{
+  opacity: 0.43;
+  width: 15vw;
+  margin-top: -5%;
+  margin-left: 37%;
+}
+
+.portal1{
+  width: 33vw;
+  margin-top: -20%;
+  margin-left: 10%;
+}
+
+.portal2{
+  width: 66vw;
+  margin-top: -32%;
+  margin-left: 30%;
+}
+
+.portal3{
+  width: 33vw;
+  margin-top: -6%;
+  margin-left: 30%;
+}
+
 .oldportfolio1{
+  opacity: 1;
   width: 35vw;
-  margin-top: -16%;
+  margin-top: -28%;
   margin-left: 12%;
 }
 
 .oldportfolio2{
-  width: 35vw;
-  margin-top: -8%;
-  margin-left: 58%;
+  opacity: 1;
+  width: 38vw;
+  margin-top: -12%;
+  margin-left: 55%;
 }
 
 .oldportfolio3{
+  opacity: 0.6;
   width: 28vw;
-  margin-top: 2%;
+  margin-top: -10%;
   margin-left: 38%;
 }
 

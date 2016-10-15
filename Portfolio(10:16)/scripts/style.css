@@ -436,13 +436,13 @@ right: 0;
 }
 
 .three{
-  background-color: green;
-  color: yellow;
+  background-color: #E0E0E0;
+  color: #00AAFF;
 }
 
 .four{
-  background-color: #81a9ee;
-  color: orange;
+  background-color: #62473f;
+  color: #FFB514;
 }
 
 .five{
@@ -471,11 +471,11 @@ right: 0;
 }
 
 .UIcolor3{
-  background-color: yellow;
+  background-color: #00AAFF;
 }
 
 .UIcolor4{
-  background-color: orange;
+  background-color: #FFB514;
 }
 
 .UIcolor5{
@@ -496,11 +496,11 @@ right: 0;
 }
 
 .thirdcolor{
-  color: yellow;
+  color: #00AAFF;
 }
 
 .fourthcolor{
-  color: orange;
+  color: #FFB514;
 }
 
 .fifthcolor{
@@ -512,7 +512,7 @@ right: 0;
 /*styling images (hoo boy)*/
 
 
-.splash1, .splash2, .splash3, .portal1, .portal2, .portal3, .oldportfolio1, .oldportfolio2, .oldportfolio3{
+.splash1, .splash2, .splash3, .google1, .google2, .google3, .bfadt1, .bfadt2, .bfadt3, .portal1, .portal2, .portal3, .oldportfolio1, .oldportfolio2, .oldportfolio3{
   position: absolute;
  -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -527,42 +527,76 @@ right: 0;
 }
 
 .splash1{
-  opacity: 0.43;
-  width: 33vw;
+  width: 32vw;
   margin-top: -32%;
-  margin-left: 14%;
+  margin-left: -1%;
 }
 
 .splash2{
-  opacity: 0.43;
   width: 32vw;
   margin-top: -30%;
-  margin-left: 52%;
+  margin-left: 62%;
 }
 
 .splash3{
-  opacity: 0.43;
   width: 15vw;
-  margin-top: -5%;
-  margin-left: 37%;
+  margin-top: -8%;
+  margin-left: 17%;
+}
+
+
+.google1{
+  width: 27vw;
+  margin-top: -18%;
+  margin-left: 7%;
+}
+
+.google2{
+  width: 36vw;
+  margin-top: -28%;
+  margin-left: 30%;
+}
+
+.google3{
+  width: 35vw;
+  margin-top: -8%;
+  margin-left: 60%;
+}
+
+.bfadt1{
+  width: 23vw;
+  margin-top: -26%;
+  margin-left: 12%;
+}
+
+.bfadt2{
+  width: 25vw;
+  margin-top: -28%;
+  margin-left: 60%;
+}
+
+.bfadt3{
+  width: 30vw;
+  margin-top: -12%;
+  margin-left: 25%;
 }
 
 .portal1{
-  width: 33vw;
+  width: 32vw;
   margin-top: -20%;
   margin-left: 10%;
 }
 
 .portal2{
-  width: 66vw;
-  margin-top: -32%;
-  margin-left: 30%;
+  width: 60vw;
+  margin-top: -25%;
+  margin-left: 35%;
 }
 
 .portal3{
-  width: 33vw;
-  margin-top: -6%;
-  margin-left: 30%;
+  width: 34vw;
+  margin-top: -4%;
+  margin-left: 26%;
 }
 
 .oldportfolio1{

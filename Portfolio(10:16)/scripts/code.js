@@ -41,23 +41,23 @@ setInterval(changeText, 400);
 
 var scrollHeight = $(window).height();
 
-var openingsection = scrollHeight * 0;
-var firstsection = scrollHeight * 1;
-var secondsection = scrollHeight * 2;
-var thirdsection = scrollHeight * 3;
-var fourthsection = scrollHeight * 4;
-var fifthsection = scrollHeight * 5;
+var openingsection = scrollHeight * 0.5;
+var firstsection = scrollHeight * 1.5;
+var secondsection = scrollHeight * 2.5;
+var thirdsection = scrollHeight * 3.5;
+var fourthsection = scrollHeight * 4.5;
+var fifthsection = scrollHeight * 5.5;
 
 //update variables on resize
 
 $(window).resize(function(){
     scrollHeight = $(window).height();
-		openingsection = scrollHeight * 0;
-		firstsection = scrollHeight * 1;
-		secondsection = scrollHeight * 2;
-		thirdsection = scrollHeight * 3;
-		fourthsection = scrollHeight * 4;
-		fifthsection = scrollHeight * 5;
+		openingsection = scrollHeight * 0.5;
+		firstsection = scrollHeight * 1.5;
+		secondsection = scrollHeight * 2.5;
+		thirdsection = scrollHeight * 3.5;
+		fourthsection = scrollHeight * 4.5;
+		fifthsection = scrollHeight * 5.5;
 });
 
 // adding and removing classes based on which section is active

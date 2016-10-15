@@ -426,12 +426,12 @@ right: 0;
 }
 
 .one{
-  background-color: orange;
-  color: blue;
+  background-color: #3fb943;
+  color: #0000FF;
 }
 
 .two{
-  background-color: yellow;
+  background-color: #b62384;
   color: green;
 }
 
@@ -463,7 +463,7 @@ right: 0;
 }
 
 .UIcolor1{
-  background-color: blue;
+  background-color: #0000ff;
 }
 
 .UIcolor2{
@@ -488,7 +488,7 @@ right: 0;
 }
 
 .firstcolor{
-  color: blue;
+  color: #0000ff;
 }
 
 .secondcolor{
@@ -512,7 +512,7 @@ right: 0;
 /*styling images (hoo boy)*/
 
 
-.splash1, .splash2, .splash3, .google1, .google2, .google3, .bfadt1, .bfadt2, .bfadt3, .portal1, .portal2, .portal3, .oldportfolio1, .oldportfolio2, .oldportfolio3{
+.splash1, .splash2, .splash3, .google1, .google2, .google3, .tcp1, .tcp2, .tcp3, .bfadt1, .bfadt2, .bfadt3, .portal1, .portal2, .portal3, .oldportfolio1, .oldportfolio2, .oldportfolio3{
   position: absolute;
  -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -560,6 +560,24 @@ right: 0;
 .google3{
   width: 35vw;
   margin-top: -8%;
+  margin-left: 60%;
+}
+
+.tcp1{
+  width: 52vw;
+  margin-top: -27%;
+  margin-left: 5%;
+}
+
+.tcp2{
+  width: 25vw;
+  margin-top: -28%;
+  margin-left: 65%;
+}
+
+.tcp3{
+  width: 17vw;
+  margin-top: -6%;
   margin-left: 60%;
 }
 

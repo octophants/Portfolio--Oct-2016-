@@ -423,6 +423,95 @@ right: 0;
 }
 
 
+.profileleft{
+width: 45vw;
+line-height: 1.2;
+letter-spacing: 1.5px;
+margin-left: 5vw;
+margin-right: auto;
+margin-top: 15vh;
+padding-left: 2vw;
+padding-right: 2vw;
+color: #bfbfbf;
+font-size: 24px;
+float: left;
+text-align: left;
+
+}
+
+.profileright{
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+  margin-top: 15vh;
+  margin-left: 5vw;
+  width: 30vw;
+  float: left;
+}
+
+.profileboxlinks{
+  list-style-type: none;
+  display: inline-block;
+  height: 5vh;
+  color: #ffffff;
+  margin-right: 3vw;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.profileboxlinks:hover{
+  padding-bottom: 10px;
+  color: #ff00bb;
+  border-bottom: 2px solid #ff00bb;
+}
+
+.drips{
+  font-size: 18px;
+  font-style: italic;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.drips:hover{
+  color: #ff00bb;
+}
+
+.aboutdrips{
+  background-color: #ffffff;
+  padding: 10px;
+  width: 30vw;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.revealdrips{
+  opacity: 1;
+}
+
+.profilepic{
+  width: 32vw;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hideprofilepic{
+  opacity: 0;
+}
+
 /*speeds*/
 .hamburger, .number, .profileUI, .downarrow, #xicon{
 
@@ -952,50 +1041,33 @@ background-attachment: scroll;
   #navigation li{
     font-size: 8vh;
   }
-}
 
-@media only screen (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait)  { 
-
-  .bodytext {
-    width: 70vw;
-    font-size: 6vh;
+  .hidethis, .drips, .profileright{
+    display: none;
   }
 
-.defaultsplash1,
-.splash1move,  
-.google1move,  
-.tcp1move, 
-.bfadt1move, 
-.portal1move,  
-.oldportfolio1move {
-margin-top: -40vh;
-width: 500px;
--webkit-animation-name: defaultsplashone; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 0s; /* Chrome, Safari, Opera */
-  animation-name: defaultsplashone;
-  animation-duration: 0s;
-}
 
-.defaultsplash2, .defaultsplash3,
-.splash2move, .splash3move, 
-.google2move, .google3move,
-.tcp2move, .tcp3move, 
-.bfadt2move, .bfadt3move, 
-.portal2move, .portal3move,
-.oldportfolio2move, .oldportfolio3move{
- display: none;
-}
+  .profileleft{
+    margin-top: 20vh;
+    margin-left: 10vw;
+    width: 80vw;
+    text-align: center;
+  }
 
-  #navigation li{
-    font-size: 8vh;
+  .profileboxlinks{
+    padding-bottom: 3vh;
+    display: block;
+    text-align: center;
+    border-bottom: none;
+  }
+
+    .profileboxlinks:hover{
+    border-bottom: none;
   }
 }
 
-@media only screen (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)  { 
-
-  .bodytext {
-    width: 70vw;
-    font-size: 6vh;
+@media (max-width: 1024px) {
+  .profileleft{
+    font-size: 18px;
   }
-
 }

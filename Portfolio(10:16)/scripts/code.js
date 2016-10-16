@@ -253,8 +253,13 @@ $(document).ready(function(){
         $("#fullpage").toggleClass("noopacity");
         $("body").toggleClass("hideforprofile");
 
+
 });
 
+    $(".drips").hover(function () {
+    $(".aboutdrips").toggleClass("revealdrips");
+    $(".profilepic").toggleClass("hideprofilepic");
+ });
 });
 
 // end hamburger menu + profile blurb

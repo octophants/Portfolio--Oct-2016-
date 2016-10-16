@@ -878,13 +878,59 @@ right: 0;
 
 
 
+@media (max-width: 768px) {
 
-@media (max-width: 700px) {
+.default, .opening, .one, .two, .three, .four, .five{
+background-repeat: no-repeat;
+background-attachment: scroll;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
 
-  .bodytext {
-    width: 80vw;
+
+.default, .opening{
+ background-image: url("../images/splash1.png");
+ background-position: 0% 1%;
+}
+
+.one{
+ background-image: url("../images/google2.png");
+ background-position: 0% 20%;
+}
+
+.two{
+ background-image: url("../images/tcp2.png");
+ background-position: 0% 40%;
+}
+
+.three{
+ background-image: url("../images/bfadt1.png");
+ background-position: 0% 60%;
+}
+
+.four{
+ background-image: url("../images/portal3.png");
+ background-position: 0% 77%;
+}
+
+.five{
+ background-image: url("../images/oldportfolio1.png");
+ background-position: 0% 98%;
+}
+
+.bodytext {
+    background-image: none;
+    background-color: #ffffff;
+    color: #000000;
+    width: 70vw;
     font-size: 6vh;
-  }
+}
+
+#navigation li{
+  background-image: none;
+}
 
 .defaultsplash1,
 .splash1move,  
@@ -892,15 +938,7 @@ right: 0;
 .tcp1move, 
 .bfadt1move, 
 .portal1move,  
-.oldportfolio1move {
-margin-top: -40vh;
-width: 75%;
--webkit-animation-name: defaultsplashone; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 0s; /* Chrome, Safari, Opera */
-  animation-name: defaultsplashone;
-  animation-duration: 0s;
-}
-
+.oldportfolio1move,
 .defaultsplash2, .defaultsplash3,
 .splash2move, .splash3move, 
 .google2move, .google3move,
@@ -919,7 +957,7 @@ width: 75%;
 @media only screen (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait)  { 
 
   .bodytext {
-    width: 80vw;
+    width: 70vw;
     font-size: 6vh;
   }
 
@@ -931,7 +969,7 @@ width: 75%;
 .portal1move,  
 .oldportfolio1move {
 margin-top: -40vh;
-width: 75%;
+width: 500px;
 -webkit-animation-name: defaultsplashone; /* Chrome, Safari, Opera */
   -webkit-animation-duration: 0s; /* Chrome, Safari, Opera */
   animation-name: defaultsplashone;
@@ -951,4 +989,13 @@ width: 75%;
   #navigation li{
     font-size: 8vh;
   }
+}
+
+@media only screen (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)  { 
+
+  .bodytext {
+    width: 70vw;
+    font-size: 6vh;
+  }
+
 }

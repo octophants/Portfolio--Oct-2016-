@@ -30,7 +30,9 @@ body{
 ::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
-
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff00bb;
+}
 
 
 ::-moz-selection { 
@@ -80,7 +82,8 @@ body{
 	top: 0;
   margin-top: 30px;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
+  pointer-events: none;
 }
 
 #bottombar{
@@ -89,12 +92,14 @@ body{
 	bottom: 0;
   margin-bottom: 10px;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
+  pointer-events: none;
 }
 
 
 .hamburger, .profilelink, .number, .downarrow {
- z-index: 2;
+ z-index: 3;
+ pointer-events: all;
 }
 
 .hamburger, .number{
@@ -189,7 +194,7 @@ body{
 }
 
 #hamburgericon.open span{
-  background-color: black;
+  background-color: #ff00bb;
 }
 
 #hamburgericon.open span:nth-child(1) {
@@ -346,7 +351,6 @@ a{
 
 #navigation{
 background-color: #ffffff;
-padding-top: 5vh;
 }
 
 #profile{
@@ -397,11 +401,12 @@ right: 0;
 }
 
 #navigation li{
-  height: 13vh;
+  border-bottom: 6px solid #000000;
+  line-height: 1.8;
+  height: 13.5vh;
   font-size: 8vh;
   list-style-type: none;
   text-align: center;
-  line-height: 1.5;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -417,9 +422,6 @@ right: 0;
   color: #000000;
 }
 
-.profilehamburger{
-  color: #000000;
-}
 
 /*speeds*/
 .hamburger, .number, .profileUI, .downarrow, #xicon{
@@ -701,7 +703,12 @@ right: 0;
 }
 
 
-.splash1, .splash2, .splash3, .google1, .google2, .google3, .tcp1, .tcp2, .tcp3, .bfadt1, .bfadt2, .bfadt3, .portal1, .portal2, .portal3, .oldportfolio1, .oldportfolio2, .oldportfolio3{
+.splash1, .splash2, .splash3, 
+.google1, .google2, .google3, 
+.tcp1, .tcp2, .tcp3, 
+.bfadt1, .bfadt2, .bfadt3, 
+.portal1, .portal2, .portal3, 
+.oldportfolio1, .oldportfolio2, .oldportfolio3{
   opacity: 0;
   width: 20vw;
   margin-top: -15%;
@@ -869,20 +876,40 @@ right: 0;
   }
 }*/
 
-@media (max-width: 600px) {
+
+
+
+@media (max-width: 700px) {
 
   .bodytext {
     width: 80vw;
-    font-size: 12vh;
-  }
-    .openingtext{
-    font-size: 8vh;
-    text-align: center;
+    font-size: 6vh;
   }
 
- #navigation{
-    padding-top: 12vh;
-  }
+.defaultsplash1,
+.splash1move,  
+.google1move,  
+.tcp1move, 
+.bfadt1move, 
+.portal1move,  
+.oldportfolio1move {
+margin-top: -40vh;
+width: 75%;
+-webkit-animation-name: defaultsplashone; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0s; /* Chrome, Safari, Opera */
+  animation-name: defaultsplashone;
+  animation-duration: 0s;
+}
+
+.defaultsplash2, .defaultsplash3,
+.splash2move, .splash3move, 
+.google2move, .google3move,
+.tcp2move, .tcp3move, 
+.bfadt2move, .bfadt3move, 
+.portal2move, .portal3move,
+.oldportfolio2move, .oldportfolio3move{
+ display: none;
+}
 
   #navigation li{
     font-size: 8vh;
@@ -893,18 +920,35 @@ right: 0;
 
   .bodytext {
     width: 80vw;
-    font-size: 12vh;
-  }
-    .openingtext{
-    font-size: 8vh;
+    font-size: 6vh;
   }
 
-  #navigation{
-    padding-top: 12vh;
-  }
+.defaultsplash1,
+.splash1move,  
+.google1move,  
+.tcp1move, 
+.bfadt1move, 
+.portal1move,  
+.oldportfolio1move {
+margin-top: -40vh;
+width: 75%;
+-webkit-animation-name: defaultsplashone; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0s; /* Chrome, Safari, Opera */
+  animation-name: defaultsplashone;
+  animation-duration: 0s;
+}
+
+.defaultsplash2, .defaultsplash3,
+.splash2move, .splash3move, 
+.google2move, .google3move,
+.tcp2move, .tcp3move, 
+.bfadt2move, .bfadt3move, 
+.portal2move, .portal3move,
+.oldportfolio2move, .oldportfolio3move{
+ display: none;
+}
 
   #navigation li{
     font-size: 8vh;
   }
-
 }

@@ -5,9 +5,9 @@ var texts = [
 "dope", 
 "radical", 
 "crazy", 
-"impossible", 
+"odd", 
 "gnarly", 
-"questionable", 
+"trippy", 
 "wild", 
 "colorful", 
 "weird", 
@@ -15,21 +15,23 @@ var texts = [
 "wavey", 
 "too much", 
 "ridiculous", 
+"groovy",
 "magical", 
 "loopy", 
 "awake", 
 "hungry", 
-"obsessed",
-"prepared", 
+"strange",
+"noticeable", 
+"prepared",
 "ready"
 ];
 
 var count = 0;
 function changeText() {
     $("#slotmachine").text(texts[count]);
-    count < 22 ? count++ : count = 0;
+    count < 24 ? count++ : count = 0;
 }
-setInterval(changeText, 400);
+setInterval(changeText, 300);
 
 //end changing words
 

@@ -1,32 +1,33 @@
 // changing words
 var texts = [
 "intense", 
-"scandalous",
+"bold",
 "dope", 
 "radical", 
 "crazy", 
 "impossible", 
 "gnarly", 
-"endless", 
+"questionable", 
 "wild", 
 "colorful", 
 "weird", 
 "insane", 
 "wavey", 
-"too many", 
+"too much", 
 "ridiculous", 
 "magical", 
-"delicious", 
-"sweet", 
-"arty farty", 
-"nostalgic", 
-"exciting"
+"loopy", 
+"awake", 
+"hungry", 
+"obsessed",
+"prepared", 
+"ready"
 ];
 
 var count = 0;
 function changeText() {
     $("#slotmachine").text(texts[count]);
-    count < 21 ? count++ : count = 0;
+    count < 22 ? count++ : count = 0;
 }
 setInterval(changeText, 400);
 
@@ -71,77 +72,128 @@ $(window).on("scroll", function() {
 
     if($(window).scrollTop() > openingsection) {
         $("#fullpage").removeClass("default");
+        $(".bodytext").removeClass("default");
         $("#fullpage").addClass("one");
+        $(".bodytext").addClass("one");
         $("#hamburgericon span").addClass("UIcolor1");
         $("#xicon span").addClass("UIcolor1");
         $(".UItext").addClass("firstcolor");
         $(".firstnumber").addClass("shownumber");
         $(".openingnumber").removeClass("shownumber");
+        $(".google1").addClass("google1move");
+        $(".google2").addClass("google2move");
+        $(".google3").addClass("google3move");
+        $(".defaultsplash1").addClass("splash1");
+        $(".defaultsplash2").addClass("splash2");
+        $(".defaultsplash3").addClass("splash3");
     } else {
        $("#fullpage").removeClass("one");
+       $(".bodytext").removeClass("one");
        $("#fullpage").addClass("opening");
+       $(".bodytext").addClass("opening");
        $("#hamburgericon span").removeClass("UIcolor1");
        $("#xicon span").removeClass("UIcolor1");
        $(".UItext").removeClass("firstcolor");
        $(".firstnumber").removeClass("shownumber");
        $(".openingnumber").addClass("shownumber");
+       $(".defaultsplash1").removeClass("splash1");
+       $(".defaultsplash2").removeClass("splash2");
+       $(".defaultsplash3").removeClass("splash3");
+       $(".google1").removeClass("google1move");
+       $(".google2").removeClass("google2move");
+       $(".google3").removeClass("google3move");
     }
 
     //transitions for second section
 
     if($(window).scrollTop() > firstsection) {
         $("#fullpage").addClass("two");
+        $(".bodytext").addClass("two");
         $("#hamburgericon span").addClass("UIcolor2");
         $("#xicon span").addClass("UIcolor2");
         $(".UItext").addClass("secondcolor");
         $(".secondnumber").addClass("shownumber");
         $(".firstnumber").removeClass("shownumber");
+        $(".tcp1").addClass("tcp1move");
+        $(".tcp2").addClass("tcp2move");
+        $(".tcp3").addClass("tcp3move");
+        $(".google1").removeClass("google1move");
+        $(".google2").removeClass("google2move");
+        $(".google3").removeClass("google3move");
     } else {
        $("#fullpage").removeClass("two");
+       $(".bodytext").removeClass("two");
        $("#hamburgericon span").removeClass("UIcolor2");
        $("#xicon span").removeClass("UIcolor2");
        $(".UItext").removeClass("secondcolor");
        $(".secondnumber").removeClass("shownumber");
+       $(".tcp1").removeClass("tcp1move");
+       $(".tcp2").removeClass("tcp2move");
+       $(".tcp3").removeClass("tcp3move");
+
     }
 
     //transitions for third section
 
     if($(window).scrollTop() > secondsection) {
         $("#fullpage").addClass("three");
+        $(".bodytext").addClass("three");
         $("#hamburgericon span").addClass("UIcolor3");
         $("#xicon span").addClass("UIcolor3");
         $(".UItext").addClass("thirdcolor");
         $(".thirdnumber").addClass("shownumber");
         $(".secondnumber").removeClass("shownumber");
+        $(".bfadt1").addClass("bfadt1move");
+        $(".bfadt2").addClass("bfadt2move");
+        $(".bfadt3").addClass("bfadt3move");
+        $(".tcp1").removeClass("tcp1move");
+        $(".tcp2").removeClass("tcp2move");
+        $(".tcp3").removeClass("tcp3move");
     } else {
        $("#fullpage").removeClass("three");
+       $(".bodytext").removeClass("three");
        $("#hamburgericon span").removeClass("UIcolor3");
        $("#xicon span").removeClass("UIcolor3");
        $(".UItext").removeClass("thirdcolor");
        $(".thirdnumber").removeClass("shownumber");
+       $(".bfadt1").removeClass("bfadt1move");
+       $(".bfadt2").removeClass("bfadt2move");
+       $(".bfadt3").removeClass("bfadt3move");
     }
 
     //transitions for fourth section
 
     if($(window).scrollTop() > thirdsection) {
         $("#fullpage").addClass("four");
+        $(".bodytext").addClass("four");
         $("#hamburgericon span").addClass("UIcolor4");
         $(".UItext").addClass("fourthcolor");
         $("#xicon span").addClass("UIcolor4");
         $(".fourthnumber").addClass("shownumber");
         $(".thirdnumber").removeClass("shownumber");
+        $(".portal1").addClass("portal1move");
+        $(".portal2").addClass("portal2move");
+        $(".portal3").addClass("portal3move");
+        $(".bfadt1").removeClass("bfadt1move");
+        $(".bfadt2").removeClass("bfadt2move");
+        $(".bfadt3").removeClass("bfadt3move");
     } else {
        $("#fullpage").removeClass("four");
+       $(".bodytext").removeClass("four");
        $("#hamburgericon span").removeClass("UIcolor4");
        $("#xicon span").removeClass("UIcolor4");
        $(".UItext").removeClass("fourthcolor");
        $(".fourthnumber").removeClass("shownumber");
+       $(".portal1").removeClass("portal1move");
+       $(".portal2").removeClass("portal2move");
+       $(".portal3").removeClass("portal3move");
     }
 
     //transitions for fifth section
 
     if($(window).scrollTop() > fourthsection) {
         $("#fullpage").addClass("five");
+        $(".bodytext").addClass("five");
         $("#hamburgericon span").addClass("UIcolor5");
         $("#xicon span").addClass("UIcolor5");
         $(".UItext").addClass("fifthcolor");
@@ -149,12 +201,22 @@ $(window).on("scroll", function() {
         $(".fourthnumber").removeClass("shownumber");
         // spin arrow
         $(".downarrow").addClass("rotatearrow");
+        $(".oldportfolio1").addClass("oldportfolio1move");
+        $(".oldportfolio2").addClass("oldportfolio2move");
+        $(".oldportfolio3").addClass("oldportfolio3move");
+        $(".portal1").removeClass("portal1move");
+        $(".portal2").removeClass("portal2move");
+        $(".portal3").removeClass("portal3move");
     } else {
        $("#fullpage").removeClass("five");
+       $(".bodytext").removeClass("five");
        $("#hamburgericon span").removeClass("UIcolor5");
        $("#xicon span").removeClass("UIcolor5");
        $(".UItext").removeClass("fifthcolor");
        $(".fifthnumber").removeClass("shownumber");
+       $(".oldportfolio1").removeClass("oldportfolio1move");
+       $(".oldportfolio2").removeClass("oldportfolio2move");
+       $(".oldportfolio3").removeClass("oldportfolio3move");
        // unspin arrow
        $(".downarrow").removeClass("rotatearrow");
     }

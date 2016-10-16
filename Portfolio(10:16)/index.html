@@ -12,6 +12,7 @@
   <script type="text/javascript">
 	$(document).ready(function() {
 	$('#fullpage').fullpage({
+		anchors:['hi', 'google', 'typecode', 'bfadt', 'portal', 'past'],
 	});
 });
 
@@ -23,12 +24,13 @@
 <!-- navigation from hamburger -->
 <div id="navigation" class="hidedropdown">
 
-<li class="noopacity">Google Play</li>
-<li class="noopacity">Type/Code</li>
-<li class="noopacity">Parsons BFADT</li>
-<li class="noopacity">Portfolio</li>
-<li class="noopacity">Portal</li>
-<li class="noopacity">Profile</li>
+<a href=""><li class="noopacity opening">Google Play</li></a>
+<a href=""><li class="noopacity one">Type/Code</li></a>
+<a href=""><li class="noopacity two">Parsons BFADT</li></a>
+<a href=""><li class="noopacity three">Portfolio</li></a>
+<a href=""><li class="noopacity four">Portal</li></a>
+<a href=""><li class="noopacity five">Past</li></a>
+<a href=""><li class="noopacity profilehamburger">Profile</li></a>
 
 </div>
 
@@ -80,20 +82,26 @@
 <div id="fullpage" class="default"> <!-- begin fullpage -->
 
 <div class="section"> <!-- opening -->
-<div class="bodytext openingtext">
+<a href="#google">
+<div class="bodytext default">
 Sam Madhu is <br><span id="slotmachine">intense</span>.
 </div>
+</a>
 
-<img class="splash1" src="images/splash1.png">
-<img class="splash2" src="images/splash2.png">
-<img class="splash3" src="images/splash3.png">
+<img class="defaultsplash1" src="images/splash1.png">
+<img class="defaultsplash2" src="images/splash2.png">
+<img class="defaultsplash3" src="images/splash3.png">
 
 </div>
 
 <div class="section"> <!-- project 1 -->
+
+<a href="">	
 <div class="bodytext">
 Google Play
 </div>
+</a>
+
 
 <img class="google1" src="images/google1.png">
 <img class="google2" src="images/google2.png">
@@ -102,9 +110,12 @@ Google Play
 </div>
 
 <div class="section"> <!-- project 2 -->
+
+<a href="">
 <div class="bodytext">
 Type Code
 </div>
+</a>
 
 <img class="tcp1" src="images/tcp1.png">
 <img class="tcp2" src="images/tcp2.png">
@@ -113,22 +124,27 @@ Type Code
 </div>
 
 <div class="section"> <!-- project 3 -->
-<div class="bodytext">
-BFADT
-</div>
 
-<img class="bfadt1" src="images/bfadt1.png">
+<a href="">
+<div class="bodytext">
+BFA DT
+</div>
+</a>
+
 <img class="bfadt2" src="images/bfadt2.png">
 <img class="bfadt3" src="images/bfadt3.png">
+<img class="bfadt1" src="images/bfadt1.png">
 
 
 </div>
 
 <div class="section"> <!-- project 4 -->
 
-<div class="bodytext">
+<a href="">
+<div class="bodytext"> 
 Portal
 </div>
+</a>
 
 <img class="portal2" src="images/portal2.png">
 <img class="portal1" src="images/portal1.png">
@@ -138,9 +154,11 @@ Portal
 
 <div class="section"> <!-- project 5 -->
 
+<a href="">
 <div class="bodytext">
 Past
 </div> 
+</a>
 
 <img class="oldportfolio3" src="images/oldportfolio3.png">
 <img class="oldportfolio1" src="images/oldportfolio1.png">

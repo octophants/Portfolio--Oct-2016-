@@ -1,6 +1,9 @@
   @font-face {
     font-family: SofiaProBold;
-    src: url(fonts/SofiaProBold.otf);
+    src: url('../fonts/sofiaprobold-webfont.woff2') format('woff2'),
+    url('../fonts/sofiaprobold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 *{
@@ -149,6 +152,8 @@ body{
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
   cursor: crosshair;
+  margin-top: 10px;
+  margin-right: -10px;
 }
 
 #xicon span{
@@ -397,13 +402,13 @@ right: 0;
 .hideforprofile{
   background-color: #000000;
   color: #000000;
-  /*overflow-y: hidden !important;*/
+  overflow-y: hidden !important;
 }
 
 #navigation li{
-  border-bottom: 6px solid #000000;
+  border-bottom: 1vh solid #000000;
   line-height: 1.8;
-  height: 13.5vh;
+  height: 16vh;
   font-size: 8vh;
   list-style-type: none;
   text-align: center;
@@ -432,8 +437,8 @@ margin-right: auto;
 margin-top: 15vh;
 padding-left: 2vw;
 padding-right: 2vw;
-color: #bfbfbf;
-font-size: 24px;
+color: #BDBDBD;
+font-size: 20px;
 float: left;
 text-align: left;
 
@@ -468,6 +473,18 @@ text-align: left;
   padding-bottom: 10px;
   color: #ff00bb;
   border-bottom: 2px solid #ff00bb;
+}
+
+.parsonslink{
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.parsonslink:hover{
+  color: #ff00bb;
 }
 
 .drips{
@@ -792,6 +809,8 @@ text-align: left;
 }
 
 
+
+
 .splash1, .splash2, .splash3, 
 .google1, .google2, .google3, 
 .tcp1, .tcp2, .tcp3, 
@@ -823,7 +842,6 @@ text-align: left;
   margin-right: auto;
   text-align: center;*/
 }
-
 
 
 
@@ -894,22 +912,23 @@ text-align: left;
 .bfadt1move{
   opacity: 1;
   width: 26vw;
-  margin-top: -5%;
-  margin-left: 23%;
+  margin-top: -31%;
+  margin-left: 65%;
 }
 
 .bfadt2move{
   opacity: 1;
-  width: 30vw;
-  margin-top: -31%;
-  margin-left: 62%;
+  width: 32vw;
+  margin-top: -32%;
+  margin-left: 10%;
 }
 
 .bfadt3move{
   opacity: 1;
-  width: 32vw;
-  margin-top: -30%;
-  margin-left: 3%;}
+  width: 33vw;
+  margin-top: -10%;
+  margin-left: 60%;
+}
 
 .portal1move{
   opacity: 1;
@@ -957,6 +976,285 @@ text-align: left;
 
 /*end styling images*/
 
+
+
+/*styling for case studies*/
+
+.downarrow2{
+  text-align: center;
+  font-size: 2.5em;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.description{
+  font-size: 2.2vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.bodytext2{
+  font-family: 'SofiaProBold', Arial, sans-serif;
+  font-size: 8vh; 
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  /*textbox*/
+
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  border: 6px solid #000000;
+}
+
+.fp-auto-height{
+  height: 10000px; 
+}
+
+.content{
+  height: 200vh;
+  background-color: #E0E0E0;
+}
+
+
+
+.nextproject{
+  padding-top: 10vh;
+  font-size: 8vh;
+  width: 100%;
+  height: 35vh;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 10px solid #000000;
+}
+
+.nextproject:hover{
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.googlebg, .tcpbg, .bfadtbg, .portalbg, .oldportfoliobg{
+  border-bottom: 7px solid #000000;
+}
+
+.googlebg{
+  background-color: #4BBD4F;
+  color: #0000FF;
+}
+
+.tcpbg{
+  background-color: #b62384;
+  color: #73E62C;
+}
+
+
+.bfadtbg{
+  background-color: #0085f7;
+  color: #FFEE00;
+}
+
+
+.portalbg{
+  background-color: #FCD34C;
+  color: #FF6F21;
+}
+
+
+.oldportfoliobg{
+  background-color: #212121;
+  color: #e11ede;
+}
+
+.googleUIcolor1{
+  background-color: #0000ff;
+}
+
+.googleUIcolor2{
+  color: #0000ff;
+}
+
+
+.tcpUIcolor1{
+  background-color: #73E62C;
+}
+
+.tcpUIcolor2{
+  color: #73E62C;
+}
+
+.bfadtUIcolor1{
+  background-color: #FFEE00;
+}
+
+.bfadtUIcolor2{
+  color: #FFEE00;
+}
+
+.portalUIcolor1{
+  background-color: #FF6F21;
+}
+
+.portalUIcolor2{
+  color: #FF6F21;
+}
+
+.oldportfolioUIcolor1{
+  background-color: #e11ede;
+}
+
+.oldportfolioUIcolor2{
+  color: #e11ede;
+}
+
+.google1move2, .google2move2, .google3move2, 
+.tcp1move2, .tcp2move2, .tcp3move2, 
+.bfadt1move2, .bfadt2move2, .bfadt2move3, 
+.portal1move2, .portal2move2, .portal2move3,
+.oldportfolio1move2, .oldportfolio2move2, .oldportfolio2move3 {
+  position: absolute;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+ -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+.google1move2{
+  opacity: 1;
+  width: 33vw;
+  margin-top: -30%;
+  margin-left: 6%;
+}
+
+.google2move2{
+  opacity: 1;
+  width: 36vw;
+  margin-top: -32%;
+  margin-left: 50%;
+}
+
+.google3move2{
+  opacity: 1;
+  width: 28vw;
+  margin-top: -4%;
+  margin-left: 70%;
+}
+
+
+.tcp1move2{
+  opacity: 1;
+  width: 57vw;
+  margin-top: -32%;
+  margin-left: 5%;
+}
+
+.tcp2move2{
+  opacity: 1;
+  width: 27vw;
+  margin-top: -10%;
+  margin-left: 71%;
+}
+
+.tcp3move2{
+  opacity: 1;
+  width: 18vw;
+  margin-top: -30%;
+  margin-left: 65%;
+}
+
+.bfadt1move2{
+  opacity: 1;
+  width: 26vw;
+  margin-top: -31%;
+  margin-left: 65%;
+}
+
+.bfadt2move2{
+  opacity: 1;
+  width: 32vw;
+  margin-top: -32%;
+  margin-left: 10%;
+}
+
+.bfadt3move2{
+  opacity: 1;
+  width: 33vw;
+  margin-top: -10%;
+  margin-left: 60%;
+}
+
+.portal1move2{
+  opacity: 1;
+  width: 36vw;
+  margin-top: -27%;
+  margin-left: 5%;
+}
+
+.portal2move2{
+  opacity: 1;
+  width: 62vw;
+  margin-top: -32%;
+  margin-left: 35%;
+}
+
+.portal3move2{
+  opacity: 1;
+  width: 38vw;
+  margin-top: -5%;
+  margin-left: 20%;
+}
+
+.oldportfolio1move2{
+  opacity: 1;
+  width: 40vw;
+  margin-top: -32%;
+  margin-left: 5%;
+}
+
+.oldportfolio2move2{
+  opacity: 1;
+  width: 39vw;
+  margin-top: -10%;
+  margin-left: 58%;
+}
+
+.oldportfolio3move2{
+  opacity: 0.9;
+  width: 42vw;
+  margin-top: -25%;
+  margin-left: 32%;
+}
+
 /*responsiveness*/
 
 /*@media (max-width: 600px) and (min-width: 520px) { !!!!this is the syntax
@@ -964,6 +1262,9 @@ text-align: left;
     width: 640px;
   }
 }*/
+
+
+
 
 
 
@@ -1011,9 +1312,7 @@ background-attachment: scroll;
 
 .bodytext {
     background-image: none;
-    background-color: #ffffff;
-    color: #000000;
-    width: 70vw;
+    width: 40vh;
     font-size: 6vh;
 }
 
@@ -1063,6 +1362,30 @@ background-attachment: scroll;
 
     .profileboxlinks:hover{
     border-bottom: none;
+  }
+
+  /*case studies*/
+
+  .google1move2, .google2move2, .google3move2, 
+  .tcp1move2, .tcp2move2, .tcp3move2, 
+  .bfadt1move2, .bfadt2move2, .bfadt2move3, 
+  .portal1move2, .portal2move2, .portal2move3,
+  .oldportfolio1move2, .oldportfolio2move2, .oldportfolio2move3{
+    display: none;
+  }
+
+  .bodytext2{
+    background-image: none;
+    width: 40vh;
+    font-size: 6vh;
+  }
+
+  .description{
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 3vh;
+    background-image: none;
   }
 }
 

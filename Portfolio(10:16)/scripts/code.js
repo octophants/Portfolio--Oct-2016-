@@ -256,6 +256,8 @@ $(document).ready(function(){
 
 });
 
+
+
     $(".drips").hover(function () {
     $(".aboutdrips").toggleClass("revealdrips");
     $(".profilepic").toggleClass("hideprofilepic");

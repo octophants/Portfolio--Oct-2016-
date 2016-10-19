@@ -349,6 +349,11 @@ margin-right: auto;
   color: #ffffff;
 }
 
+.nohover:hover{
+  background-color: #f1ddc1;
+  color: #000000;
+}
+
 a{
   text-decoration: none;
 }
@@ -578,7 +583,7 @@ text-align: left;
 
 
 .three{
-  background-color: #0085f7;
+  background-color: #0077DE;
   color: #FFEE00;
 }
 
@@ -946,7 +951,7 @@ text-align: left;
 
 .portal3move{
   opacity: 1;
-  width: 38vw;
+  width: 33vw;
   margin-top: -5%;
   margin-left: 20%;
 }
@@ -1006,6 +1011,19 @@ text-align: left;
   padding-right: 15vw;
 }
 
+
+.descriptionlinks{
+  text-decoration: underline;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.descriptionlinks:hover{
+  color: #ffffff;
+}
+
 .bodytext2{
   font-family: 'SofiaProBold', Arial, sans-serif;
   font-size: 8vh; 
@@ -1033,7 +1051,7 @@ text-align: left;
 }
 
 .contentimages{
-  width: 75vw;
+  width: 62vw;
   margin-top: 10vh;
   margin-bottom: 10vh;
   -webkit-user-drag: none;
@@ -1048,6 +1066,12 @@ text-align: left;
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently not supported by any browser */
 }
+
+
+.bigger{
+  width: 80vw;
+}
+
 
 /*.blackborder{
   border: 5px solid #000000;
@@ -1066,7 +1090,6 @@ text-align: left;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border-top: 10px solid #000000;
-  border-bottom: 10px solid #000000;
 }
 
 .nextproject:hover{
@@ -1090,7 +1113,7 @@ text-align: left;
 
 
 .bfadtbg{
-  background-color: #0085f7;
+  background-color: #0077DE;
   color: #FFEE00;
 }
 
@@ -1246,7 +1269,7 @@ text-align: left;
 
 .portal3move2{
   opacity: 1;
-  width: 38vw;
+  width: 33vw;
   margin-top: -5%;
   margin-left: 20%;
 }
@@ -1386,7 +1409,7 @@ background-attachment: scroll;
   .google1move2, .google2move2, .google3move2, 
   .tcp1move2, .tcp2move2, .tcp3move2, 
   .bfadt1move2, .bfadt2move2, .bfadt2move3, 
-  .portal1move2, .portal2move2, .portal2move3,
+  .portal1move2, .portal2move2, .portal3move2,
   .oldportfolio1move2, .oldportfolio2move2, .oldportfolio3move2{
     display: none;
   }
@@ -1397,6 +1420,11 @@ background-attachment: scroll;
     font-size: 6vh;
   }
 
+
+  .descriptionlinks{
+  background-image: none;
+  }
+
   .description{
     text-align: center;
     padding-left: 25px;
@@ -1404,6 +1432,7 @@ background-attachment: scroll;
     font-size: 3vh;
     background-image: none;
   }
+
 
   .contentimages{
     width: 90vw;
